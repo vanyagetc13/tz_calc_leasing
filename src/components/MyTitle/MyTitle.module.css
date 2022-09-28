@@ -1,0 +1,14 @@
+.wrapper {
+    max-width: 753px;
+}
+
+.title {
+    font: 3.6em Gilroy, sans-serif;
+    color: #111111;
+    font-weight: 900;
+    line-height: 90%;
+}
+
+.title span {
+    white-space: nowrap;
+}

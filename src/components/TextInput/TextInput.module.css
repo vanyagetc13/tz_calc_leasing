@@ -1,0 +1,14 @@
+.input {
+    margin: 16px 24px;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    font-family: "Nekst-Black";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #575757;
+}

@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import DragInput from "./components/DragInput/DragInput";
+import MyTitle from "./components/MyTitle/MyTitle";
+import MyButton from "./components/UI/MyButton/MyButton";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <MyTitle />
+            <div className="inputs">
+                <DragInput
+                    min={1000000}
+                    max={6000000}
+                    step={10000}
+                    title="Стоимость автомобиля"
+                    after="&#8381;"
+                />
+                <DragInput title="Первоначальный взнос" />
+                <DragInput title="Срок лизинга" min={1} max={60} step={1} after="мес."/>
+            </div>
+            <div className="lower">
+                <div>Сумма договора лизинга</div>
+                <div>Ежемесячный платеж от</div>
+                <MyButton>Оставить заявку</MyButton>
+            </div>
+        </div>
+    );
 }
 
 export default App;
