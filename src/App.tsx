@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-import "./App.css";
+import "./App.scss";
 import DragInput from "./components/DragInput/DragInput";
 import MyTitle from "./components/MyTitle/MyTitle";
 import PercentageInput from "./components/PercentageInput/PercentageInput";

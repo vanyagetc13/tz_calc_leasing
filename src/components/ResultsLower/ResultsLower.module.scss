@@ -1,3 +1,11 @@
+.lower {
+    margin-top: 44px;
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .title {
     font-family: "Gilroy";
     font-style: normal;
@@ -14,4 +22,15 @@
     font-size: 54px;
     line-height: 90%;
     color: #575757;
+    white-space: nowrap;
+}
+
+.new_row {
+    width: 100%;
+}
+
+@media screen and (min-width: 1025px) {
+    .new_row {
+        display: none;
+    }
 }

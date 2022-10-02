@@ -24,7 +24,7 @@ const PercentageInput = ({
 
     return (
         <InputWrapper title={title}>
-            <div className={styles.results}>{initial + " "}&#8381;</div>
+            <input className={styles.results} type="text" disabled  value={initial + " ₽"}/>
             <div className={styles.percent}>{value}&#37;</div>
             <RangeInput value={value} valueH={handler} step={1} min={10} max={60} />
         </InputWrapper>

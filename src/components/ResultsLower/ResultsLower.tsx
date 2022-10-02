@@ -48,7 +48,7 @@ const ResultsLower = ({ price, term, percent, initial }: ResultsLowerProps) => {
     }
 
     return (
-        <div className="lower">
+        <div className={styles.lower}>
             <div className={styles.wrapper}>
                 <h4 className={styles.title}>Сумма договора лизинга</h4>
                 <div className={styles.result}>{separater(summary)} &#8381;</div>
@@ -57,6 +57,7 @@ const ResultsLower = ({ price, term, percent, initial }: ResultsLowerProps) => {
                 <h4 className={styles.title}>Ежемесячный платеж от</h4>
                 <div className={styles.result}>{separater(monthPay)} &#8381;</div>
             </div>
+            <div className={styles.new_row}></div>
             <MyButton click={sendToBackend}>Оставить заявку</MyButton>
         </div>
     );

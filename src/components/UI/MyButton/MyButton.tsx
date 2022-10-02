@@ -3,19 +3,19 @@ import styles from "./MyButton.module.scss";
 
 interface MyButtonProps {
     children: React.ReactNode;
-    status?: string;
+    isPending?: boolean;
     click?: () => void;
 }
 
-const MyButton = ({ children, status = "default", click }: MyButtonProps) => {
+const MyButton = ({ children, isPending = false, click }: MyButtonProps) => {
     return (
         <button
-            disabled={status === "disabled"}
+            disabled={isPending}
             className={`${styles.button} ${styles.pending}`}
             onClick={click}
         >
-            {status === "default" && children}
-            {status === "pending" && <div className={styles.loader}></div>}
+            {!isPending && children}
+            {isPending && <div className={styles.loader}></div>}
         </button>
     );
 };

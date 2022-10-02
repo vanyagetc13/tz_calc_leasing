@@ -12,7 +12,6 @@
 
 .input {
     font-size: 2em;
-    min-width: 280px;
     min-height: 70px;
     position: relative;
 
@@ -27,5 +26,18 @@
 
     &:focus-within {
         background: #fff;
+    }
+}
+
+
+@media screen and (max-width: 510px) {
+    .input input[type="text"] {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .input input[type="text"] {
+        width: 80%;
     }
 }

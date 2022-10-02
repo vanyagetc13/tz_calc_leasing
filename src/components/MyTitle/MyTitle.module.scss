@@ -3,12 +3,18 @@
 }
 
 .title {
-    font: 3.6em Gilroy, sans-serif;
+    font: 3.6em Nekst-Black, sans-serif;
     color: #111111;
     font-weight: 900;
     line-height: 90%;
 
     span {
-    white-space: nowrap;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .title {
+        font-size: 34px;
     }
 }
