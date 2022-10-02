@@ -1,0 +1,31 @@
+.title {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #575757;
+
+    margin-bottom: 24px;
+}
+
+.input {
+    font-size: 2em;
+    min-width: 280px;
+    min-height: 70px;
+    position: relative;
+
+    background: #f3f3f4;
+    border: 1px solid #F3F3F4;
+    border-radius: 16px;
+
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+
+    &:focus-within {
+        background: #fff;
+    }
+}

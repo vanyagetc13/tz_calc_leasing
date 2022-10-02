@@ -1,0 +1,59 @@
+.button {
+    font-family: "Nekst-Black";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 20px;
+
+    background: #ff9514;
+    border-radius: 40px;
+    padding: 20px 50px;
+    color: #fff;
+
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.2s;
+
+    &:hover {
+        background: #111111;
+    }
+
+    &:active {
+        background: #575757;
+    }
+
+    &:disabled {
+        background: rgba(255, 149, 20, 0.4);
+        cursor: default;
+    }
+
+    &.loading {
+        cursor: default;
+    }
+}
+
+.loader {
+    width: 21px;
+    height: 21px;
+    border: 2px solid #fff;
+    border-top-color: transparent;
+    border-radius: 50%;
+
+    animation: loader 1.5s linear infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
