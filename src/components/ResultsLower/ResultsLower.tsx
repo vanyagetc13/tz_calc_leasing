@@ -1,10 +1,10 @@
-import axios from "axios";
+// import axios from "axios";
 import React, { useMemo } from "react";
 import { separater } from "../../utilities/separater";
 import MyButton from "../UI/MyButton/MyButton";
 
 import styles from "./ResultsLower.module.scss";
-import { antiError } from "../../hooks/useSubmit";
+// import { antiError } from "../../hooks/useSubmit";
 
 interface ResultsLowerProps {
     price: string;
@@ -16,7 +16,7 @@ interface ResultsLowerProps {
 const ResultsLower = ({ price, term, percent, initial }: ResultsLowerProps) => {
     const STAVKA = 0.035; // Процентная ставка
 
-    const URL = 'https://eoj3r7f3r4ef6v4.m.pipedream.net'
+    // const URL = 'https://eoj3r7f3r4ef6v4.m.pipedream.net'
 
     const monthPay = useMemo(() => {
         return Math.floor(
