@@ -9,6 +9,8 @@
     left: 6%;
 }
 
+// WebKit
+
 .range::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 20px;
@@ -28,6 +30,30 @@
     width: 20px;
     height: 20px;
 }
+
+// Mozilla
+
+.range::-moz-range-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff9514;
+    cursor: pointer;
+    border: none;
+}
+
+.range:hover::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+}
+
+.range:active::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+}
+
+// ...
 
 .range:hover {
     height: 1px;
