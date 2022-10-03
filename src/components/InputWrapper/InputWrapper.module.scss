@@ -16,7 +16,7 @@
     position: relative;
 
     background: #f3f3f4;
-    border: 1px solid #F3F3F4;
+    border: 1px solid #f3f3f4;
     border-radius: 16px;
 
     display: flex;
@@ -29,10 +29,13 @@
     }
 }
 
+.input input[type="text"] {
+    width: fit-content;
+}
 
 @media screen and (max-width: 510px) {
     .input input[type="text"] {
-        width: 30%;
+        width: 60%;
     }
 }
 
