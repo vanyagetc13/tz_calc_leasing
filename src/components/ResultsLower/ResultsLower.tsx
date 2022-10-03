@@ -45,6 +45,13 @@ const ResultsLower = ({ price, term, percent, initial }: ResultsLowerProps) => {
     // })
 
     const sendToBackend = () => {
+        // Leasing info is little bit upper
+        // axios.pos(URL, LeasingInfo)
+        //     .then(response => {console.log(response);
+        //     })
+        //     .catch(e){
+        //         console.error(e.message);
+        //     }
     }
 
     return (
