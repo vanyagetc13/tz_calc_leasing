@@ -1,12 +1,13 @@
 .App {
     display: flex;
     flex-direction: column;
+    margin: 8px;
 }
 
 .version {
     position: absolute;
     top: 5px;
-    left: 5px;
+    right: 5px;
     color: grey;
     opacity: 0.5;
     font-size: 10px;

@@ -19,7 +19,7 @@ function App() {
 
     return (
         <div className="App">
-            <div className="version">v 2.0.1a</div>
+            <div className="version">v. 2.1</div>
             <MyTitle />
             <div className="inputs">
                 <DragInput
